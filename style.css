@@ -1,0 +1,288 @@
+.css{
+    position: fixed;
+  }
+  
+  
+  *{
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  html{
+    scroll-behavior: smooth;
+  }
+  
+  :root{
+    --navbar-height: 59px;
+  }
+  
+  /* Navigation Bar */
+  #navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+  }
+  
+  #navbar::before{
+    content: "";
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.8;
+  }
+  #logo{
+    margin: 10px 34px;
+  }
+  
+  #logo img{
+    height: 68px;
+    margin: 1px 6px;
+  }
+  #navbar ul{
+    display: flex;
+    font-family: 'Marck Script', cursive;
+  }
+  
+  #navbar ul li{ 
+    list-style: none;
+    font-size: 1.6rem;
+  }
+  
+  #navbar ul li a{
+    color: rgb(37, 35, 35);
+    display: block;
+    padding: 3px 22px;
+    border-radius: 10px;
+    text-decoration: none;
+  }
+  
+  #navbar ul li a:hover{
+    color: rgb(207, 8, 8);
+    background-color: rgba(41, 114, 8, 0.11);
+  }
+  #Home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #Home::before{ 
+    content: "";
+    position: absolute;
+    background: url('flora1.jpg') no-repeat center center/cover;
+    height: 705px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.9;
+  }
+  
+  #Home h1{
+    color:rgb(245, 245, 245);
+    text-align: center;
+    font-family: 'Rokkitt', serif;
+    font-size: 50px;
+  }
+  
+  #Home p{
+    color:rgba(250, 246, 246, 0.952);
+    text-align: center;
+    font-size: 18px;
+    font-family: 'IM Fell DW Pica SC', serif;
+  }
+  #flora{
+    margin: auto;
+    display: auto;
+    width: 100%;
+    content: "";
+    background: url("background3.jpeg")no-repeat center center/cover;
+    background-color: rgb(0, 0, 0);
+    font-family: 'Norican', cursive;
+    opacity: 0.96;
+    z-index: -1;
+    position: relative;
+  }
+  #flora.box{ 
+    border: 1px solid rgb(0, 0, 0);
+    padding: 3px;
+    margin: auto;
+    border-radius: 28px;
+    background: #9c4242;
+    margin-bottom: 20px;
+  }
+  
+  #flora.box img{ 
+   height: 160px;
+   margin: auto;
+   display: block;
+   width: 100%;
+  }
+  
+  #flora.box p{
+    font-family: 'Norican', cursive;
+    
+  
+  } 
+  .bd-placeholder-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    width: 100%;
+  }
+  #message{
+    content: "";
+    position: relative;
+    background: url('background7.jpeg') no-repeat center center/cover;
+    height: 720px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+    font-family: 'Nanum Pen Script', cursive;
+    color: moccasin;
+    font-size: 20px;
+    opacity: 0.79;
+    border: 1px solid black;
+  }
+  #Team{
+    position: relative;
+    background-image: url(background8.jpeg);
+    z-index: -1;
+    
+  }
+  #Contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 120%;
+    z-index: -1;
+    opacity: .9;
+    background: url("background10.jpeg") no-repeat center center/cover;
+    
+  }
+  #contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+  }
+  #contact-box input, 
+  #contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.5rem;
+  } 
+  
+  #contact-box form{
+    width: 40%;
+  }
+  
+  #contact-box label{
+   font-size: 2rem;
+   font-family: 'Alice', serif;
+  
+  }
+  
+  
+  footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+  }
+  
+  
+  
+  .h-primary{
+    font-family: 'IM Fell DW Pica SC', serif;
+    font-size: 6rem;
+    padding: 12px;
+    color: rgb(66, 65, 61);
+  }
+  
+  .h-secondary{
+    font-family: 'Playfair Display SC', serif;
+    font-size: 3rem;
+    padding: 12px;
+    color: rgba(0, 4, 39, 0.753);
+  }
+  .h-tertiary{
+    font-family: 'IM Fell DW Pica SC', serif;
+    font-size: 70px;
+    color: darkgray;
+  }
+  .h-fourth{
+    font-family: 'Flavors', cursive;
+    font-size: 30px;
+    color: honeydew;
+  }
+  .h-fifth{
+    font-family: 'Gorditas', cursive;
+    font-size: 31px;
+    color: silver;
+    border: 2px dotted whitesmoke;
+  }
+  .h-sixth{
+    font-family: 'Metal Mania', cursive;
+    font-size: 60px;
+  }
+  .h-seventh{
+    font-family: 'Grenze', serif;
+    font-size: 35px;
+    font-style: italic;
+    color: rgb(0, 0, 0);
+  }
+  .h-eigth{
+    font-family: 'Knewave', cursive;
+    font-size: 40px;
+    text-align: center;
+  }
+  .bd-placeholder-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    height: 160px;
+    width: auto;
+    border: 3px solid black;
+  }
+  
+  .btn1{
+    padding: 4px 20px;
+    border: 2px solid white;
+    background-color: rgb(4, 3, 48);
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    
+  }
+  .btn-second{
+    padding: 3px 20px;
+    border: 2px solid white;
+    background-color: rgb(226, 204, 9);
+    color: rgb(255, 255, 255);
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    
+  }
+  
+  
+  .center{
+    text-align: center;
+  }
